@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+:root {
+  --Strongcyan: hsl(172, 67%, 45%);
+  --Verydarkcyan: hsl(183, 100%, 15%);
+  --Darkgrayishcyan: hsl(186, 14%, 43%);
+  --Grayishcyan: hsl(184, 14%, 56%);
+  --Lightgrayishcyan: hsl(185, 41%, 84%);
+  --Verylightgrayishcyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--Lightgrayishcyan);
+  font-weight: 700;
+  height: 90vh;
+}
+header h2 {
+  font-weight: 700;
+  color: var(--Verydarkcyan);
+  letter-spacing: 5px;
+}
+.main-C {
+  background-color: var(--White);
+  border-radius: 35px;
+}
+label {
+  padding: 0 10px;
+  margin: 10px 0;
+  color: var(--Darkgrayishcyan);
+}
+.bill {
+  position: relative;
+}
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--Verylightgrayishcyan);
+}
+.bill > i {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 50px;
+  bottom: 5px;
+  width: 20px;
+  background: url("images/icon-dollar.svg") left/contain no-repeat;
+}
+input[type="text"] {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+}
+input [type="text"] {
+  display: none;
+  border: 1px solid red;
+}
+
+.people {
+  position: relative;
+}
+.people > i {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 50px;
+  bottom: 5px;
+  width: 20px;
+  background: url("images/icon-person.svg") left/contain no-repeat;
+}
+.errorSpan {
+  display: none;
+  color: rgb(181, 68, 68);
+  position: absolute;
+  right: 0;
+  letter-spacing: 0.5px;
+}
+.buttons-div p {
+  padding: 0 10px;
+  margin: 10px 0;
+  color: var(--Darkgrayishcyan);
+}
+button {
+  width: 40%;
+  height: 50px;
+  border: none;
+  background-color: var(--Verydarkcyan);
+  color: var(--White);
+  border-radius: 5px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 20px;
+}
+button:hover {
+  background-color: var(--Strongcyan);
+  color: var(--Verydarkcyan);
+}
+.tip {
+  display: inline;
+}
+.tip input {
+  height: 60px;
+  width: 40%;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--Verylightgrayishcyan);
+}
+.tip input::placeholder {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+.rigth-side {
+  /* margin: 35px 20px;
+  padding: 30px 20px; */
+  background-color: var(--Verydarkcyan);
+  border-radius: 25px;
+}
+.rigth-side button {
+  width: 100%;
+  background-color: var(--Darkgrayishcyan);
+  color: var(--Grayishcyan);
+}
+.rigth-side button:hover {
+  background-color: var(--Strongcyan);
+  color: var(--Verydarkcyan);
+}
+.rigth-side p {
+  color: var(--White);
+}
+
+.rigth-side span {
+  color: var(--Grayishcyan);
+  font-size: 14px;
+}
+.rigth-side h4 {
+  color: var(--Strongcyan);
+  font-weight: 700;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .buttons-div > button {
+    width: 27% !important;
+  }
+  .tip input {
+    width: 29% !important;
+    height: 50px;
+  }
+  .tip input::placeholder {
+    font-size: 20px;
+  }
+  /* .rigth-side {
+    margin: 5px 5px 5px 0;
+  } */
+  .rigth-side button {
+    margin-top: 25% !important;
+  }
+}
