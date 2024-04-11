@@ -31,3 +31,14 @@ resetButton.addEventListener("click", function () {
   tipAmounts.innerHTML = 0.0;
   total.innerHTML = 0.0;
 });
+customTipInput.addEventListener("input", function () {
+  var customValue = customTipInput.value;
+  var cutomidi = customValue / 100;
+  console.log(cutomidi);
+  var billAmount = parseFloat(billInput.value);
+  var tipAmount = billAmount * cutomidi;
+  total.innerText = tipAmount.toFixed(2);
+
+  var last = tipAmount / peopleInput.value;
+  tipAmounts.innerText = last.toFixed(2);
+});

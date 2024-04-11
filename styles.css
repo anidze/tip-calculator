@@ -145,10 +145,15 @@ button:hover {
   color: var(--Grayishcyan);
   font-size: 14px;
 }
-.rigth-side h4 {
+.spans {
+  color: var(--Strongcyan) !important;
+  font-weight: 700 !important;
+  font-size: 35px !important;
+}
+.dollar {
+  height: 50px;
+  width: 65px;
   color: var(--Strongcyan);
-  font-weight: 700;
-  font-size: 30px;
 }
 @media (min-width: 768px) {
   .buttons-div > button {
